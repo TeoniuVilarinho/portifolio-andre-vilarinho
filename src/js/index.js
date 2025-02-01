@@ -7,11 +7,11 @@ botaoMostrarProjetos.addEventListener('click', () => {
 })
 
 function botaoClicado() {
-    botaoMostrarProjetos.classList.add('ativo')
+    botaoMostrarProjetos.classList.toggle('ativo')
 }
 
 function mostrarMaisProjetos() {
     projetosInativos.forEach(projetoInativo => {
-        projetoInativo.classList.add('ativo')
+        projetoInativo.classList.toggle('ativo')
     })
 }
